@@ -28,6 +28,14 @@
   transition: background-color 0.2s linear, color 200ms linear;
   cursor: pointer;
 }
+.btn:hover {
+  background-color: #ff9832;
+  transition: background-color 0.2s linear, color 200ms linear;
+}
+.btn:focus-visible {
+  background-color: #cd3400;
+  transition: background-color 0.2s linear, color 200ms linear;
+}
 
 h2, .h2 {
   padding: 0;
@@ -150,6 +158,14 @@ h2 span, .h2 span {
   color: #c0c0c0;
   transition: color 0.2s linear;
 }
+.header__navigation .header__menu ul li a:focus-visible {
+  color: #f60;
+  transition: color 0.2s linear;
+}
+.header__navigation .header__menu ul li a:active {
+  color: #3f3f3f;
+  transition: color 0.2s linear;
+}
 @media screen and (max-width: 1536px) {
   .header__navigation .header__menu ul {
     gap: 20px;
@@ -222,6 +238,14 @@ h2 span, .h2 span {
 .header__navigation .social__menu ul li a:hover svg {
   opacity: 0.9;
   transition: opacity 0.2s linear;
+}
+.header__navigation .social__menu ul li a:focus-visible {
+  color: #f60;
+  transition: color 0.2s linear;
+}
+.header__navigation .social__menu ul li a:active {
+  color: #3f3f3f;
+  transition: color 0.2s linear;
 }
 .header .burger {
   width: 50px;
@@ -591,6 +615,18 @@ h2 span, .h2 span {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.hero__tabs div a:hover {
+  color: #c0c0c0;
+  transition: color 0.2s linear;
+}
+.hero__tabs div a:focus-visible {
+  color: #f60;
+  transition: color 0.2s linear;
+}
+.hero__tabs div a:active {
+  color: #3f3f3f;
+  transition: color 0.2s linear;
 }
 
 .proposal {
@@ -1692,9 +1728,10 @@ h2 span, .h2 span {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #808080;
+  background-color: #dbdbdb;
   cursor: pointer;
   margin: 0 10px;
+  transition: background-color 0.2s linear;
 }
 @media screen and (max-width: 1024px) {
   .slider .mySwiper .swiper-pagination.slider-pagin.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
@@ -1702,8 +1739,13 @@ h2 span, .h2 span {
     height: 15px;
   }
 }
+.slider .mySwiper .swiper-pagination.slider-pagin.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet:hover {
+  background-color: #808080;
+  transition: background-color 0.2s linear;
+}
 .slider .mySwiper .swiper-pagination.slider-pagin.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #f60;
+  transition: background-color 0.2s linear;
 }
 .slider h2.h2 {
   margin-bottom: 60px;
@@ -2290,6 +2332,18 @@ h2 span, .h2 span {
   outline: none;
   background: transparent;
 }
+.banner-third .banner__text-desc button:hover {
+  color: #c0c0c0;
+  transition: color 0.2s linear;
+}
+.banner-third .banner__text-desc button:focus-visible {
+  color: #f60;
+  transition: color 0.2s linear;
+}
+.banner-third .banner__text-desc button:active {
+  color: #3f3f3f;
+  transition: color 0.2s linear;
+}
 .banner-third .banner__text-desc button.show-more__active {
   display: none;
 }
@@ -2380,6 +2434,18 @@ h2 span, .h2 span {
   margin-bottom: 0;
   text-decoration: none;
 }
+.contacts__text .address p:hover, .contacts__text .address a:hover, .contacts__text .number-call p:hover, .contacts__text .number-call a:hover, .contacts__text .email p:hover, .contacts__text .email a:hover, .contacts__text .social p:hover, .contacts__text .social a:hover {
+  color: #c0c0c0;
+  transition: color 0.2s linear;
+}
+.contacts__text .address p:focus-visible, .contacts__text .address a:focus-visible, .contacts__text .number-call p:focus-visible, .contacts__text .number-call a:focus-visible, .contacts__text .email p:focus-visible, .contacts__text .email a:focus-visible, .contacts__text .social p:focus-visible, .contacts__text .social a:focus-visible {
+  color: #f60;
+  transition: color 0.2s linear;
+}
+.contacts__text .address p:active, .contacts__text .address a:active, .contacts__text .number-call p:active, .contacts__text .number-call a:active, .contacts__text .email p:active, .contacts__text .email a:active, .contacts__text .social p:active, .contacts__text .social a:active {
+  color: #3f3f3f;
+  transition: color 0.2s linear;
+}
 .contacts__text .social {
   flex-direction: row;
   max-width: 520px;
@@ -2440,16 +2506,42 @@ h2 span, .h2 span {
   color: #808080;
   position: relative;
 }
+.footer-navigation a:hover {
+  color: #c0c0c0;
+  transition: color 0.2s linear;
+}
+.footer-navigation a:focus-visible {
+  color: #f60;
+  transition: color 0.2s linear;
+}
+.footer-navigation a:active {
+  color: #3f3f3f;
+  transition: color 0.2s linear;
+}
 .footer-navigation a::after {
   content: "|";
   position: absolute;
   top: 0;
   right: -15px;
+  color: #808080;
+  outline: none;
 }
 @media screen and (max-width: 1024px) {
   .footer-navigation a::after {
     display: none;
   }
+}
+.footer-navigation a:hover::after {
+  color: #808080;
+  transition: color 0.2s linear;
+}
+.footer-navigation a:focus-visible::after {
+  color: #808080;
+  transition: color 0.2s linear;
+}
+.footer-navigation a:active::after {
+  color: #808080;
+  transition: color 0.2s linear;
 }
 .footer-navigation a:last-child::after {
   display: none;

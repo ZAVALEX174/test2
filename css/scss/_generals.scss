@@ -29,6 +29,16 @@
   border-color: transparent;
   transition: background-color 0.2s linear, color 200ms linear;
   cursor: pointer;
+
+  &:hover {
+    background-color: #ff9832;
+    transition: background-color 0.2s linear, color 200ms linear;
+  }
+
+  &:focus-visible {
+    background-color: #cd3400;
+    transition: background-color 0.2s linear, color 200ms linear;
+  }
 }
 
 h2, .h2 {

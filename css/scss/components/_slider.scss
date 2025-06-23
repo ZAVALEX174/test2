@@ -49,18 +49,25 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: $color-grey;
+        background-color: #dbdbdb;
         cursor: pointer;
         margin: 0 10px;
+        transition: background-color .2s linear;
 
         @media #{$tablet-large} {
           width: 15px;
           height: 15px;
         }
+
+        &:hover {
+          background-color: $color-grey;
+          transition: background-color .2s linear;
+        }
       }
 
       .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: $color-orange-juice;
+        transition: background-color .2s linear;
       }
     }
   }

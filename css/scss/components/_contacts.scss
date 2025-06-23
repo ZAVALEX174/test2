@@ -85,6 +85,21 @@
         color: $color-dark-grey;
         margin-bottom: 0;
         text-decoration: none;
+
+        &:hover {
+          color: $color-grey2;
+          transition: color 0.2s linear;
+        }
+
+        &:focus-visible {
+          color: $color-orange-juice;
+          transition: color 0.2s linear;
+        }
+
+        &:active {
+          color: #3f3f3f;
+          transition: color 0.2s linear;
+        }
       }
     }
 
