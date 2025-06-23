@@ -1,0 +1,89 @@
+.additionally {
+  width: 100%;
+  margin-bottom: 6.6%;
+
+  & > h2.h2 {
+    margin-bottom: 30px;
+  }
+
+  &__body {
+    width: 100%;
+
+    & ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      @media #{$tablet-medium} {
+        grid-template-columns: 1fr;
+      }
+
+      & li {
+        position: relative;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 40px;
+        min-height: 330px;
+        background-color: $color-light-grey;
+
+        @media #{$tablet-large} {
+          min-height: 250px;
+          padding: 30px 15px;
+        }
+
+        & > span {
+          position: absolute;
+          top: 40px;
+          right: 40px;
+
+        }
+
+        & > h3.h3 {
+          padding: 0;
+          margin: 0 0 20px 0;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          font-size: clamp(1.125rem, 0.8654rem + 1.1538vw, 2.25rem);
+          line-height: 117%;
+          color: $color-dark-grey;
+        }
+
+        & > div {
+          font-family: 'Inter', sans-serif;
+          font-weight: 400;
+          font-size: clamp(0.875rem, 0.7308rem + 0.641vw, 1.5rem);
+          color: $color-dark-grey;
+          margin-bottom: auto;
+
+          & > p {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            & > span {
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 700;
+              font-size: clamp(1.125rem, 0.8654rem + 1.1538vw, 2.25rem);
+              text-align: center;
+              background: linear-gradient(90deg, #f60 0%, #f26659 27.4%, #f06177 37.4%, #e55d97 48.4%, #ca46d2 71.4%, #8d13f9 100%);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

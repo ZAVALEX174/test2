@@ -1,0 +1,156 @@
+.best {
+  width: 100%;
+  margin-bottom: 6.6%;
+
+  & h2.h2 {
+    margin-bottom: 20px;
+  }
+
+  & div:nth-of-type(1) {
+    width: 100%;
+    max-width: 885px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: $color-grey;
+    margin: 0 auto 40px;
+
+    & p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+
+    & ul:first-of-type {
+      margin-top: 0;
+      margin-bottom: 0;
+      list-style: none;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(300px, 1fr));
+      gap: 20px;
+
+      @media #{$tablet-large} {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+      }
+
+      @media #{$tablet-medium} {
+        grid-template-columns: minmax(300px, 1fr);
+      }
+
+      & li {
+        border-radius: 40px;
+        min-height: 317px;
+        background-color: $color-light-grey;
+        padding: 40px;
+        position: relative;
+
+        @media #{$tablet-medium} {
+          min-height: 250px;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 40px;
+          right: 40px;
+          width: 60px;
+          height: 60px;
+          display: block;
+          background: url("../../../image/black_star.svg") center center/cover no-repeat;
+        }
+
+        & .h3 {
+          padding: 0;
+          margin: 0 0 12px 0;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          font-size: clamp(2.25rem, 1.6154rem + 2.8205vw, 5rem);
+          line-height: 100%;
+          color: $color-dark-grey;
+        }
+
+        & p {
+          padding: 0;
+          margin: 0 0 15px 0;
+          font-family: 'Inter', sans-serif;
+          font-weight: 400;
+          font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+          color: $color-dark-grey;
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    & ul:nth-of-type(2) {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(250px, 1fr));
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      gap: 20px;
+
+      @media #{$laptop-large} {
+        grid-template-columns: repeat(4, minmax(250px, 1fr));
+      }
+
+      @media #{$laptop-small} {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+      }
+
+      @media #{$tablet-large} {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+      }
+
+      @media #{$tablet-medium} {
+        grid-template-columns:  minmax(250px, 1fr);
+      }
+
+      & li {
+        border-radius: 40px;
+        background-color: $color-light-grey;
+        padding: 30px;
+
+        & .body__down-card {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-bottom: 0;
+          flex-direction: column;
+
+          & svg {
+            margin-bottom: 20px;
+          }
+
+          & p {
+            margin: 0;
+            padding: 0;
+            text-align: start;
+            width: 100%;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+            color: $color-grey;
+
+            & b {
+              width: 100%;
+              padding: 0;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

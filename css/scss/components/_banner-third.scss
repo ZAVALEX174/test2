@@ -1,0 +1,67 @@
+.banner-third {
+  background-color: $color-white;
+  border-radius: 0;
+  align-items: flex-start;
+
+  @media #{$laptop-medium} {
+    flex-direction: column;
+  }
+
+  & h2.h2 {
+    color: $color-dark-grey;
+  }
+
+  & .banner__text {
+    width: 50%;
+
+    @media #{$laptop-medium} {
+      width: 100%;
+    }
+  }
+
+  & .banner__text-desc {
+    width: 50%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+    color: $color-dark-grey;
+
+    @media #{$laptop-medium} {
+      width: 100%;
+    }
+
+    &-wrap {
+      width: 100%;
+      max-height: 335px;
+      overflow: hidden;
+      margin-bottom: 40px;
+
+      p {
+        margin: 0 0 20px 0;
+        padding: 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    & button {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: $color-grey;
+      border: none;
+      outline: none;
+      background: transparent;
+
+      &.show-more__active {
+        display: none;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,241 @@
+.header {
+  position: relative;
+  width: 100%;
+  padding: 6px 30px 6px 70px;
+  border-radius: 0 0 50px 50px;
+  background-color: $color-dark-grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 500;
+
+  @media #{$laptop-large} {
+    padding-left: 30px;
+  }
+
+  @media #{$laptop-medium} {
+    padding: 6px 15px;
+  }
+
+  @media #{$tablet-medium} {
+    border-radius: 0;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 251px;
+    height: 70px;
+    margin-right: auto;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-decoration: none;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+
+  &__navigation {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media #{$tablet-large} {
+      display: none;
+      flex-direction: column;
+      top: -200%;
+      position: absolute;
+      left: 20px;
+      transition: 0.5s ease-in-out;
+    }
+
+    .header__menu {
+
+      @media #{$tablet-large} {
+        width: 100%;
+      }
+
+      & ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-weight: 400;
+        font-size: 24px;
+        color: $color-white;
+        font-family: "Inter", sans-serif;
+
+        @media #{$tablet-large} {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        & li a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          text-decoration: none;
+          color: inherit;
+          transition: color 0.2s linear;
+          font-family: inherit;
+
+          &:hover {
+            color: $color-grey2;
+            transition: color 0.2s linear;
+          }
+        }
+
+        @media #{$laptop-large} {
+          gap: 20px;
+        }
+
+        @media #{$laptop-medium} {
+          gap: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .social__menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media #{$tablet-large} {
+        width: 100%;
+      }
+
+      & ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-weight: 400;
+        font-size: 32px;
+        color: $color-white;
+        font-family: "Inter", sans-serif;
+
+        @media #{$laptop-large} {
+          gap: 10px;
+          font-size: 20px;
+        }
+
+        @media #{$tablet-large} {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        & li {
+          padding: 0;
+          margin: 0;
+          display: flex;
+          align-items: center;
+
+          & a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s linear;
+            font-family: inherit;
+
+            & svg {
+              transition: opacity 0.2s linear;
+            }
+
+            &:hover {
+              color: $color-grey2;
+              transition: color 0.2s linear;
+
+              & svg {
+                opacity: 0.9;
+                transition: opacity 0.2s linear;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .burger {
+    width: 50px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    padding: 6px;
+
+    @media #{$tablet-large} {
+      display: flex;
+    }
+
+    & span {
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $color-white;
+      transition: background-color 0.2s linear;
+    }
+
+    &:hover {
+
+      & span {
+        background-color: $color-grey2;
+        transition: background-color 0.2s linear;
+      }
+    }
+  }
+}
+
+.border-radius {
+  border-radius: 0;
+}
+
+.all-height {
+  min-height: 100vh;
+}
+
+.header__fixed {
+  position: fixed;
+  top: 6px;
+  left: 15px;
+  width: 100%;
+}
+
+.header__fixed_burger {
+  position: fixed;
+  top: 16px;
+  right: 15px;
+  width: 100%;
+}
+
+.display-flex {
+  position: fixed;
+  display: flex;
+  top: 100px;
+  transition: top 0.5s ease-in-out;
+}

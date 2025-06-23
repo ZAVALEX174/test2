@@ -1,0 +1,127 @@
+.proposal {
+  width: 100%;
+  padding: 6.7% 0;
+
+  & .h2 {
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    width: 100%;
+
+    & ul {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      @media #{$laptop-medium} {
+        grid-template-columns: 1fr;
+      }
+
+      & li {
+        display: grid;
+        border-radius: 30px;
+        width: 100%;
+        min-height: 349px;
+        background: $color-light-grey;
+        grid-template-columns: 1fr minmax(300px, 366px);
+        grid-template-rows: min-content 1fr;
+        grid-template-areas: 'title-card img-card'
+      'subtitle-card img-card';
+        column-gap: 10px;
+        overflow: hidden;
+
+
+        @media #{$tablet-medium} {
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+        }
+
+        & .h3 {
+          width: 100%;
+          max-width: 420px;
+          padding: 0 44px 0 40px;
+          margin: 60px 0 20px 0;
+          grid-area: title-card;
+          font-family: 'Inter', sans-serif;
+          font-weight: 400;
+          font-size: clamp(1.125rem, 0.9231rem + 0.8974vw, 2rem);
+          color: $color-dark-grey;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 44px;
+            height: 44px;
+            right: -10px;
+            top: 0;
+            background: url("../../../image/star2.png") center/cover no-repeat;
+
+            @media #{$tablet-medium} {
+              right: 0;
+            }
+          }
+        }
+
+        & div:nth-of-type(1) {
+          grid-area: subtitle-card;
+          padding-left: 40px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 400;
+          font-size: clamp(0.875rem, 0.7308rem + 0.641vw, 1.5rem);
+          color: $color-grey;
+
+          @media #{$tablet-medium} {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+
+          & p {
+            margin: 0;
+
+            &:not(:last-child) {
+              margin: 0 0 15px 0;
+            }
+          }
+        }
+
+        & div:nth-of-type(2) {
+          grid-area: img-card;
+          position: relative;
+
+          @media #{$tablet-medium} {
+            display: flex;
+            justify-content: flex-end;
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 321px;
+            height: 219px;
+            background: url("../../../image/el.svg") center/contain no-repeat;
+          }
+
+          & img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            @media #{$tablet-medium} {
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}
