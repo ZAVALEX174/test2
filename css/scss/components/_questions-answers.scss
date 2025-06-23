@@ -192,7 +192,7 @@
           height: 46px;
           transform: translateY(-50%);
           transition: transform 0.3s;
-          background: url("../../../image/pl_or.svg") center center/cover no-repeat;
+          background: url("../image/pl_or.svg") center center/cover no-repeat;
 
           @media #{$tablet-medium} {
             width: 23px;
@@ -211,7 +211,7 @@
       height: 46px;
       transform: translateY(-50%);
       transition: transform 0.3s;
-      background: url("../../../image/pl_gr.svg") center center/cover no-repeat;
+      background: url("../image/pl_gr.svg") center center/cover no-repeat;
 
       @media #{$tablet-medium} {
         width: 23px;
@@ -229,7 +229,7 @@
       height: 3px;
       transform: translateY(-50%);
       transition: transform 0.3s;
-      background: url("../../../image/minus.svg") center center/cover no-repeat;
+      background: url("../image/minus.svg") center center/cover no-repeat;
 
       @media #{$tablet-medium} {
         width: 23px;

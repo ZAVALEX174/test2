@@ -498,7 +498,7 @@ h2 span, .h2 span {
   display: block;
   width: 60px;
   height: 60px;
-  background: url("../../../image/star.svg") no-repeat center center/cover;
+  background: url("../image/star.svg") no-repeat center center/cover;
   z-index: 100;
   pointer-events: none;
 }
@@ -555,7 +555,7 @@ h2 span, .h2 span {
   display: block;
   width: 60px;
   height: 60px;
-  background: url("../../../image/star.svg") no-repeat center center/cover;
+  background: url("../image/star.svg") no-repeat center center/cover;
   z-index: 100;
   pointer-events: none;
 }
@@ -691,7 +691,7 @@ h2 span, .h2 span {
   height: 44px;
   right: -10px;
   top: 0;
-  background: url("../../../image/star2.png") center/cover no-repeat;
+  background: url("../image/star2.png") center/cover no-repeat;
 }
 @media screen and (max-width: 768px) {
   .proposal__content ul li .h3::after {
@@ -736,7 +736,7 @@ h2 span, .h2 span {
   display: block;
   width: 321px;
   height: 219px;
-  background: url("../../../image/el.svg") center/contain no-repeat;
+  background: url("../image/el.svg") center/contain no-repeat;
 }
 .proposal__content ul li div:nth-of-type(2) img {
   position: absolute;
@@ -886,7 +886,7 @@ h2 span, .h2 span {
   width: 24px;
   height: 16px;
   display: block;
-  background: url("../../../image/check_w.svg") center center/cover no-repeat;
+  background: url("../image/check_w.svg") center center/cover no-repeat;
 }
 .price__content ul .price__content-card div:nth-of-type(2) > ul > li {
   width: 100%;
@@ -905,7 +905,7 @@ h2 span, .h2 span {
   width: 24px;
   height: 16px;
   display: block;
-  background: url("../../../image/check.svg") center center/cover no-repeat;
+  background: url("../image/check.svg") center center/cover no-repeat;
 }
 .price__content ul .price__content-card_dark {
   background-color: #2d2d2d;
@@ -1275,7 +1275,7 @@ h2 span, .h2 span {
   width: 72px;
   height: 72px;
   display: block;
-  background: url("../../../image/star.svg") center center/cover no-repeat;
+  background: url("../image/star.svg") center center/cover no-repeat;
   top: 5px;
   left: -75px;
   pointer-events: none;
@@ -1291,7 +1291,7 @@ h2 span, .h2 span {
   width: 57px;
   height: 57px;
   display: block;
-  background: url("../../../image/m_star.svg") center center/cover no-repeat;
+  background: url("../image/m_star.svg") center center/cover no-repeat;
   bottom: -60px;
   right: 25px;
   pointer-events: none;
@@ -1666,7 +1666,7 @@ h2 span, .h2 span {
   content: "";
   position: absolute;
   bottom: -39px;
-  right: 0px;
+  right: 0;
   width: 40px;
   height: 40px;
   display: block;
@@ -2208,7 +2208,7 @@ h2 span, .h2 span {
   height: 46px;
   transform: translateY(-50%);
   transition: transform 0.3s;
-  background: url("../../../image/pl_or.svg") center center/cover no-repeat;
+  background: url("../image/pl_or.svg") center center/cover no-repeat;
 }
 @media screen and (max-width: 768px) {
   .questions-answers .accordion .item:hover .header:after {
@@ -2225,7 +2225,7 @@ h2 span, .h2 span {
   height: 46px;
   transform: translateY(-50%);
   transition: transform 0.3s;
-  background: url("../../../image/pl_gr.svg") center center/cover no-repeat;
+  background: url("../image/pl_gr.svg") center center/cover no-repeat;
 }
 @media screen and (max-width: 768px) {
   .questions-answers .accordion .header:after {
@@ -2242,7 +2242,7 @@ h2 span, .h2 span {
   height: 3px;
   transform: translateY(-50%);
   transition: transform 0.3s;
-  background: url("../../../image/minus.svg") center center/cover no-repeat;
+  background: url("../image/minus.svg") center center/cover no-repeat;
 }
 @media screen and (max-width: 768px) {
   .questions-answers .accordion .item.active .header:after {

@@ -61,7 +61,7 @@
             height: 44px;
             right: -10px;
             top: 0;
-            background: url("../../../image/star2.png") center/cover no-repeat;
+            background: url("../image/star2.png") center/cover no-repeat;
 
             @media #{$tablet-medium} {
               right: 0;
@@ -108,7 +108,7 @@
             display: block;
             width: 321px;
             height: 219px;
-            background: url("../../../image/el.svg") center/contain no-repeat;
+            background: url("../image/el.svg") center/contain no-repeat;
           }
 
           & img {
