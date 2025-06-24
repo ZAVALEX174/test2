@@ -1934,7 +1934,7 @@ h2 span, .h2 span {
   width: 60px;
   height: 60px;
   display: block;
-  background: url("../../../image/black_star.svg") center center/cover no-repeat;
+  background: url("../image/black_star.svg") center center/cover no-repeat;
 }
 .best__body ul:first-of-type li .h3 {
   padding: 0;
