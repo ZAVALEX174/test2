@@ -2265,6 +2265,11 @@ h2 span, .h2 span {
   padding-right: 40px;
   margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+  .questions-answers .accordion .content {
+    padding: 0 20px 0 20px;
+  }
+}
 .questions-answers .accordion .content p {
   margin: 0 0 20px 0;
 }
@@ -2281,7 +2286,7 @@ h2 span, .h2 span {
 }
 @media screen and (max-width: 768px) {
   .questions-answers .accordion .item.active .content {
-    padding: 0 50px 0 20px;
+    padding: 0 20px 0 20px;
   }
 }
 
